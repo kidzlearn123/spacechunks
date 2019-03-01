@@ -13,7 +13,7 @@ REGION = os.environ["REGION"]
 MEDIA_URL =  "https://{}.amazonaws.com/{}/{}"
 print("URL=",MEDIA_URL)
 
-d1 = feedparser.parse("https://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss")
+d1 = feedparser.parse(".rss file")
 SESSION_BODY_3 = "body_3"
 SESSION_LIST_2 = "list_2"
 SESSION_BODY_HELP = "help"
@@ -210,7 +210,7 @@ def goodby():
 
 # list template two
 def list_template_two():
-    title = "Space Chunks - NASA APOD"
+    title = "Space Chunks "
     speech = "Welcome to Space Chunks. You can say 'show me contents for the title number' and say the title number,  or say 'show me contents for the title name' and say the title name to see the details for a particular image. Say help for more information. "
     #speech.reprompt("Choose a title or say yes")
     print("image=",d1.entries[0].published)
